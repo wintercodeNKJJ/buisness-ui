@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export default function InstallButton() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handler = (e: Event) => {
